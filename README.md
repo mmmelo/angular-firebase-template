@@ -1,2 +1,2 @@
-# Angular + Angular Material with Routing
+# Angular + Firebase with Routing
 
