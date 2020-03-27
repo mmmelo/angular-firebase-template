@@ -1,0 +1,21 @@
+<div id="login" fxLayout="row" fxLayoutAlign="center center">
+	<div id="login-form">
+		<form fxFlex="50">
+			<mat-card>
+				<mat-card-title>LogIn</mat-card-title>
+				<mat-card-content>
+					<mat-form-field>
+						<input matInput placeholder="Enter your email" #email required>
+					</mat-form-field>
+					<mat-form-field>
+						<input matInput #password type="password" required placeholder="Password">
+					</mat-form-field>
+				</mat-card-content>
+				<mat-card-footer fxLayout="column">
+					<button mat-raised-button color="primary" (click)="authService.signIn( email.value, password.value)"> Login</button>
+					<button mat-raised-button color="warn" (click)="authService.loginWithGoogle()"> Google</button>
+				</mat-card-footer>
+			</mat-card>
+		</form>
+	</div>
+</div>

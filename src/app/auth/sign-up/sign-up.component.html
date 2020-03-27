@@ -1,0 +1,20 @@
+<div id="signup" fxLayout="row" fxLayoutAlign="center center">
+	<div id="signup-form">
+		<form fxFlex="50">
+			<mat-card>
+				<mat-card-title>SignUp</mat-card-title>
+				<mat-card-content>
+					<mat-form-field>
+						<input matInput placeholder="Enter your email" #email required>
+					</mat-form-field>
+					<mat-form-field>
+						<input matInput #password type="password" required placeholder="Password">
+					</mat-form-field>
+				</mat-card-content>
+				<mat-card-footer fxLayout="column">
+					<button mat-raised-button color="primary" (click)="authService.signUp( email.value, password.value)"> SignUp</button>
+				</mat-card-footer>
+			</mat-card>
+		</form>
+	</div>
+</div>
