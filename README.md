@@ -3,7 +3,7 @@
 
 
 > enviromenment.ts file:
-To setup a google [Firebase](https://firebase.google.com/docs/web/setup)
+- To setup a google [Firebase](https://firebase.google.com/docs/web/setup)
 ```typescript 
 export  const  environment = {
 
